@@ -6,4 +6,4 @@ import pickle
 # Importando algoritmo
 from sklearn.ensemble import RandomForestClassifier
 
-st.markdown('*Observação: para mais informações, navegue pelas páginas*')
+st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
