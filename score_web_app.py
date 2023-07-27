@@ -71,7 +71,7 @@ def conversao_opcao_moradia(opcao):
   elif opcao == 'Aluguel':
     output = 3
   elif opcao == 'Outro':
-    output 3
+    output = 4
   return output
 
 def conversao_objetivo_financiamento(opcao):
