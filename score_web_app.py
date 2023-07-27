@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import joblib
 
 # Importando algoritmo
 from sklearn.ensemble import RandomForestClassifier
@@ -29,8 +30,7 @@ else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 # Modelo
-with open('modelo_RFC.pkl', 'rb') as f:
-    modelo_RFC = pickle.load(f)
+modelo_RFC = joblib.load('modelo_RFC.joblib')
 
 def classificacao_risco(renda, percentual_comprometimento):
     
