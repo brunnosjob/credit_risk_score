@@ -21,7 +21,7 @@ opcoes_objetivo = ['Empreendimento', 'Educação', 'Vestuário/Entretenimento', 
 objetivo_financiamento = st.selectbox('Em que o financiamento ajudaria você?', opcoes_objetivo)
 financiamento = st.number_input('Qual valor de financiamento você precisa?', 0.0, 10000.00)
 parcela = st.radio('Em quantas vezes você quer pagar o empréstimo?', (1, 2, 3, 4, 5, 6, 12)
-mensalidade = (round(((emprestimo/parcela)) * juro,2))
+mensalidade = (round(((financiamento/parcela)) * juro,2))
 
 if parcela == 1:
     st.write('Valor à vista se o empréstimo for aprovado: R$ {} por mês'.format(mensalidade))
