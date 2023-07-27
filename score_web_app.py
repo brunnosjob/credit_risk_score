@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import joblib
+import gzip
 
 # Importando algoritmo
 from sklearn.ensemble import RandomForestClassifier
