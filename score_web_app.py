@@ -30,7 +30,7 @@ else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 
-modelo_RFC = joblib.load('modelo_RFC.joblib')
+modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
 
 def classificacao_risco(renda, percentual_comprometimento):
     
