@@ -30,7 +30,7 @@ else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 
-with gzip.open('modelo_RFC.pkl.gz', 'rb') as arquivo_compactado:
+with gzip.open('modelo_RFC.pkl', 'rb') as arquivo_compactado:
     dados_descompactados = arquivo_compactado.read()
 # Modelo
 modelo_RFC = pickle.loads(dados_descompactados)
