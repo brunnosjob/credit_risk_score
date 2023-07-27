@@ -20,7 +20,7 @@ moradia = st.selectbox('Em que tipo de residência você mora?', opcoes_moradia)
 opcoes_objetivo = ['Empreendimento', 'Educação', 'Vestuário/Entretenimento', 'Saúde', 'Reforma', 'Quitar outra dívida']
 objetivo_financiamento = st.selectbox('Em que o financiamento ajudaria você?', opcoes_objetivo)
 financiamento = st.number_input('Qual valor de financiamento você precisa?', 0.0, 10000.00)
-parcela = st.radio('Em quantas vezes você quer pagar o empréstimo?', (1, 2, 3, 4, 5, 6, 12)
+parcela = st.radio('Em quantas vezes você quer pagar o empréstimo?', (1, 2, 3, 4, 5, 6, 12))
 mensalidade = (round(((financiamento/parcela)) * juro,2))
 
 if parcela == 1:
