@@ -30,10 +30,12 @@ else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
 
 
-with gzip.open('modelo_RFC.pkl.gz', 'rb') as arquivo_compactado:
-    dados_descompactados = arquivo_compactado.read()
+#with gzip.open('modelo_RFC.pkl.gz', 'rb') as arquivo_compactado:
+#    dados_descompactados = arquivo_compactado.read()
 # Modelo
-modelo_RFC = pickle.loads(dados_descompactados)
+#modelo_RFC = pickle.loads(dados_descompactados)
+
+modelo_RFC = joblib.load('modelo_RFC.joblib')
 
 def classificacao_risco(renda, percentual_comprometimento):
     
