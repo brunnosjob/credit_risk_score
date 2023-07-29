@@ -30,6 +30,10 @@ mensalidade = (round(((financiamento/parcela)) * juro,2)) # Cálculo do juros so
 
 # Operação do modelo
 modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
+if modelo_RFC == 1000:
+    modelo_RFC = 999
+else:
+    modelo_RFC = modelo_RFC
     
 def classificacao_risco(renda, percentual_comprometimento):
     
