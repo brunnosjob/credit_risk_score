@@ -100,5 +100,5 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 
-
+st.markdown('{} este é seu score: {}'.format(usuario, score_final[0][0]))
 
