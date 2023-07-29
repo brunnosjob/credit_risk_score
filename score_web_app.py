@@ -34,8 +34,6 @@ modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
 
 def classificacao_risco(renda, percentual_comprometimento):
     
-    risco = 1
-    
     if renda <= 2000 and percentual_comprometimento <= 0.3:
         risco = 1
     elif renda <= 2000 and percentual_comprometimento <= 0.5:
@@ -100,5 +98,5 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 
-st.markdown('Oi')
+st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
 
