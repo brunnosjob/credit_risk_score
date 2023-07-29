@@ -115,12 +115,12 @@ else:
         if st.button("Ver Resultado"):
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
-                st.markdown(usuario,', este é seu score:')
+                st.write(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
-                st.markdown(usuario,', este é seu score:')
+                st.write(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
                 st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
         
@@ -129,11 +129,11 @@ else:
         if st.button("Ver Resultado"):
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
-                st.markdown(usuario,', este é seu score:')
+                st.write(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
-                st.markdown(usuario,', este é seu score:')
+                st.write(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
                 st.markdown('Valor da mensalidade do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
