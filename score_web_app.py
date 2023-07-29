@@ -35,7 +35,7 @@ st.markdown(' ')
 juro = 1.12 
 
 # Solicitação de nome
-usuario = st.text_input('Me informe seu nome para termos uma melhor experiência')
+usuario = st.text_input('Me informe seu nome para uma melhor experiência')
 st.markdown('')
 
 # Buscando mais informações
