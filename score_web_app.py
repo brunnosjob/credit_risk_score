@@ -17,6 +17,7 @@ st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de Inteligência de Mercado de Crédito')
 st.sidebar.markdown('#### Projeto de modelagem')
+st.sidebar.markdown("Em breve novas informações sobre o projeto")
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
 st.sidebar.markdown("Redes Sociais :")
