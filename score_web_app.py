@@ -30,8 +30,6 @@ mensalidade = (round(((financiamento/parcela)) * juro,2)) # Cálculo do juros so
 
 # Operação do modelo
 modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
-if modelo_RFC == 1000.0:
-    modelo_RFC = 999.0
     
 def classificacao_risco(renda, percentual_comprometimento):
     
@@ -100,6 +98,11 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 
 # Predição
 score_final = modelo_RFC.predict_proba(X_final) * 1000
+# Tratamento
+if score_final == 1000:
+    score_final_tratado = 999
+else:
+    score_final_tratado = score_final
 
 # Regras
 if idade > 45:
@@ -118,12 +121,12 @@ else:
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final[0][0])
+                st.markdown(score_final_tratado[0][0])
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final[0][0])
+                st.markdown(score_final_tratado[0][0])
                 st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
         
     # Condicional para pagamento em mais de 1 vez
@@ -132,10 +135,10 @@ else:
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final[0][0])
+                st.markdown(score_final_tratado[0][0])
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final[0][0])
+                st.markdown(score_final_tratado[0][0])
                 st.markdown('Valor da mensalidade do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
