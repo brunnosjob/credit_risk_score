@@ -15,7 +15,7 @@ usuario = st.text_input('Me informe seu nome para termos uma melhor experiência
 st.markdown('')
 
 idade = st.number_input('Me informe sua idade', 18)
-renda = st.number_input('Me informe sua renda')
+renda = st.number_input('Me informe sua renda', 500.0)
 opcoes_moradia = ['Própria', 'Hipoteca', 'Aluguel', 'Outro']
 moradia = st.selectbox('Em que tipo de residência você mora?', opcoes_moradia)
 opcoes_objetivo = ['Empreendimento', 'Educação', 'Vestuário/Entretenimento', 'Saúde', 'Reforma', 'Quitar outra dívida']
