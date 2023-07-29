@@ -108,5 +108,5 @@ if parcela == 1:
 # Condicional para pagamento em mais de 1 vez
 else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
-    st.markdown('Score:')
+    st.markdown(f'**<h1 style = color: green >Score</h1>:**')
     st.markdown(f"**<h1>{score_final[0][0]}</h1>**")
