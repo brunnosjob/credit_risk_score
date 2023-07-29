@@ -102,7 +102,7 @@ score_final = modelo_RFC.predict_proba(X_final) * 1000
 if(score_final[0][0] == 1000.0).any():
     score_final_tratado = int(999.0)
 else:
-    score_final_tratado = int(score_final[0][0])
+    score_final_tratado = str(int(score_final[0][0]))
 
 # Regras
 if idade > 45:
