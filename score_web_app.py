@@ -158,7 +158,7 @@ else:
             else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
-                st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
+                st.markdown('Valor à vista do empréstimo: R$ {}. Pagamento só para daqui a três meses.'.format(mensalidade))
 
                 if st.button("Eu quero!"):
                     st.markdown('Transferência realizada!')
