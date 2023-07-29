@@ -10,6 +10,12 @@ from sklearn.ensemble import RandomForestClassifier
 # Orientação inicial
 st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
 
+st.header('Seja bem-vindo ao Good Bank')
+st.subheader('Programa Para Jovens')
+st.markdown(' ')
+usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
+st.markdown(' ')
+
 # Definição da taxa de juros
 juro = 1.12 
 
@@ -105,7 +111,7 @@ else:
     score_final_tratado = str(int(score_final[0][0]))
 
 # Regras
-if idade > 45:
+if idade > 40:
     st.write('''
     Este programa é destinado para um perfil mais jovem.
 
