@@ -84,15 +84,15 @@ def classificacao_risco(renda, percentual_comprometimento):
 
 def conversao_opcao_moradia(opcao):
     output = 0
-  if opcao == 'Própria':
-    output = 1
-  elif opcao == 'Hipoteca':
-    output = 2
-  elif opcao == 'Aluguel':
-    output = 3
-  elif opcao == 'Outro':
-    output = 4
-  return output
+    if opcao == 'Própria':
+        output = 1
+    elif opcao == 'Hipoteca':
+        output = 2
+    elif opcao == 'Aluguel':
+        output = 3
+    elif opcao == 'Outro':
+        output = 4
+    return output
 
 def conversao_objetivo_financiamento(opcao):
   output = 0  
