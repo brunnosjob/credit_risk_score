@@ -94,6 +94,8 @@ def conversao_opcao_moradia(opcao):
   return output
 
 def conversao_objetivo_financiamento(opcao):
+
+  output = None  
   if opcao == 'Empreendimento':
     output = 1
   elif opcao == 'Educação':
