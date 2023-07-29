@@ -111,8 +111,12 @@ def conversao_objetivo_financiamento(opcao):
 condicao_moradia = conversao_opcao_moradia(moradia)
 objetivo = conversao_objetivo_financiamento(objetivo_financiamento)
 percentual_comprometimento = (financiamento/renda)
+if percentual_comprometimento > 1.0:
+    percentual_comprometimento_tratada = 1.0
+else:
+    percentual_comprometimento_tratada = percentual_comprometimento
 juro = juro
-risco_credito = classificacao_risco(renda, percentual_comprometimento)
+risco_credito = classificacao_risco(renda, percentual_comprometimento_tratada)
 
 # Ordenando variáveis preditoras
 X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, juro, financiamento, objetivo]]
