@@ -149,7 +149,8 @@ else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
-                            Mas não fique triste! Você terá outras oportunidades.''')
+                            Mas não fique triste! Temos outra solução para você. Que tal tentar nossa outra modalidade de crédito?''')
+                st.markdown("- [Empréstimo Pessoal Para Todos](https://fintech-classifier-machine-learning.streamlit.app/)")
             else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
@@ -166,7 +167,8 @@ else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
-                            Mas não fique triste! Você terá outras oportunidades.''') #
+                            Mas não fique triste! Temos outra solução para você. Que tal tentar nossa outra modalidade de crédito?''')
+                st.markdown("- [Empréstimo Pessoal Para Todos](https://fintech-classifier-machine-learning.streamlit.app/)")
             else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
