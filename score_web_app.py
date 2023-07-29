@@ -99,7 +99,7 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 # Predição
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 # Tratamento
-if f (score_final[0][0] == 1000.0).any():
+if(score_final[0][0] == 1000.0).any():
     score_final_tratado = 999.0
 else:
     score_final_tratado = score_final[0][0]
