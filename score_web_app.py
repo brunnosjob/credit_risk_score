@@ -29,7 +29,6 @@ st.sidebar.markdown("- [Mercadados](https://brunnocarlotosjob.wixsite.com/mercad
 st.header('Seja bem-vindo ao Good Bank')
 st.subheader('Programa Para Jovens')
 st.markdown(' ')
-usuario =  st.text_input('Me informe seu nome para termos uma interação melhor.')
 st.markdown(' ')
 
 # Definição da taxa de juros
