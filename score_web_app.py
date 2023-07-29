@@ -16,7 +16,7 @@ foto = Image.open('bruno.carloto (2).png')
 st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de Inteligência de Mercado de Crédito')
-st.sidebar.markdown('#### Projeto de portfólio de Ciência de Dados')
+st.sidebar.markdown('#### Projeto de modelagem')
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
 st.sidebar.markdown("Redes Sociais :")
