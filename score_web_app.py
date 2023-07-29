@@ -27,7 +27,7 @@ mensalidade = (round(((financiamento/parcela)) * juro,2))
 if parcela == 1:
     st.write('Valor à vista se o empréstimo for aprovado: R$ {} por mês'.format(mensalidade))
 
-     modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
+    modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
     
     def classificacao_risco(renda, percentual_comprometimento):
         
