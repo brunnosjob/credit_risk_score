@@ -95,8 +95,8 @@ def conversao_opcao_moradia(opcao):
   return output
 
 def conversao_objetivo_financiamento(opcao):
-
   output = 0  
+
   if opcao == 'Empreendimento':
     output = 1
   elif opcao == 'Educação':
@@ -107,8 +107,9 @@ def conversao_objetivo_financiamento(opcao):
     output = 4
   elif opcao == 'Reforma':
     output = 5
-  elif opcao == 'Quita outra dívida':
+  else:
     output = 6
+  
   return output
 
 # Processamento das informações fornecidas
