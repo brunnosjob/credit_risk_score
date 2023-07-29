@@ -18,7 +18,7 @@ usuario = st.text_input('Me informe seu nome para termos uma melhor experiência
 st.markdown('')
 
 # Buscando mais informações
-idade = st.number_input('Me informe sua idade', 18) # idade
+idade = st.number_input('Me informe sua idade', 18, 120) # idade
 renda = st.number_input('Me informe sua renda', 500.0) # Renda
 opcoes_moradia = ['Própria', 'Hipoteca', 'Aluguel', 'Outro'] # Opções de condição de posse de moradia
 moradia = st.selectbox('Em que tipo de residência você mora?', opcoes_moradia) # Seleção de condição de posse de moradia
@@ -98,6 +98,9 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 
 # Predição
 score_final = modelo_RFC.predict_proba(X_final) * 1000
+
+# Regras
+if 
 
 # Condicional para pagamento à vista
 if parcela == 1:
