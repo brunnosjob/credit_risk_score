@@ -150,6 +150,9 @@ else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
                 st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
+
+                if st.button("Aceito!"):
+                    st.markdown('Transferência realizada!')
         
     # Condicional para pagamento em mais de 1 vez
     else:
@@ -164,3 +167,6 @@ else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
                 st.markdown('Valor da mensalidade do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
+
+                if st.button("Aceito!"):
+                    st.markdown('Transferência realizada!')
