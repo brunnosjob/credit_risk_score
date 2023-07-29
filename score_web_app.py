@@ -102,11 +102,11 @@ score_final = modelo_RFC.predict_proba(X_final) * 1000
 # Condicional para pagamento à vista
 if parcela == 1:
     st.write('Valor à vista se o empréstimo for aprovado: R$ {} por mês'.format(mensalidade))
-    st.markdown(f'{usuario}, este é seu score:')
+    st.markdown('Este é seu score:')
     st.markdown(score_final[0][0])
     
 # Condicional para pagamento em mais de 1 vez
 else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
-    st.markdown(f'{usuario}, este é seu score:')
+    st.markdown('Este é seu score:')
     st.markdown(score_final[0][0])
