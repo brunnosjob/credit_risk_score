@@ -100,9 +100,9 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 # Tratamento
 if(score_final[0][0] == 1000.0).any():
-    score_final_tratado = 999.0
+    score_final_tratado = int(999.0)
 else:
-    score_final_tratado = score_final[0][0]
+    score_final_tratado = int(score_final[0][0])
 
 # Regras
 if idade > 45:
@@ -121,12 +121,12 @@ else:
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final_tratado[0][0])
+                st.markdown(score_final_tratado)
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
                 st.write(usuario,', este é seu score:')
-                st.markdown(score_final_tratado[0][0])
+                st.markdown(score_final_tratado)
                 st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
         
     # Condicional para pagamento em mais de 1 vez
