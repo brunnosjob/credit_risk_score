@@ -109,4 +109,4 @@ if parcela == 1:
 else:
     st.write('Se o empréstimo for aprovado, a mensalidade fica de R$ {} por mês'.format(mensalidade))
     st.markdown('Score:')
-    st.markdown("**<h1>{score_final[0][0]}</h1>**")
+    st.markdown(f"**{score_final[0][0]}**")
