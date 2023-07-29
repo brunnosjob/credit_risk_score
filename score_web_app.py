@@ -9,13 +9,14 @@ from PIL import Image
 from sklearn.ensemble import RandomForestClassifier
 
 # Orientação inicial
+st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
+
 #Indicando do que se trata a web app
 foto = Image.open('bruno.carloto (2).png')
 st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de Inteligência de Mercado de Crédito')
 st.sidebar.markdown('#### Projeto de portfólio de Ciência de Dados')
-st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
 st.sidebar.markdown("Redes Sociais :")
