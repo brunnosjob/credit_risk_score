@@ -9,7 +9,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 # Orientação inicial
 st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
-
 st.header('Seja bem-vindo ao Good Bank')
 st.subheader('Programa Para Jovens')
 st.markdown(' ')
