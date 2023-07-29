@@ -106,7 +106,7 @@ if idade > 40:
 
     Mas não se preocupe! Temos um programa especialmente para você:''')
     texto_do_link = "Programa Para Todos"
-    st.markdown(f"[{texto_do_link}]({https://fintech-classifier-machine-learning.streamlit.app/})", unsafe_allow_html=True)
+    st.sidebar.markdown("- [Programa Para Todos](https://fintech-classifier-machine-learning.streamlit.app/)")
 
 # Condicional para pagamento à vista
 if parcela == 1:
