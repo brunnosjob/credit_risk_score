@@ -115,25 +115,25 @@ else:
         if st.button("Ver Resultado"):
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
-                st.write(usuario,', este é seu score:')
+                st.markdown(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
-                st.write('''Infelizmente, você não foi aprovado em nossa política de crédito.
+                st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
-                st.write(usuario,', este é seu score:')
+                st.markdown(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
-                st.write('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
+                st.markdown('Valor à vista do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
         
     # Condicional para pagamento em mais de 1 vez
     else:
         if st.button("Ver Resultado"):
             # O código dentro deste bloco será executado quando o botão for clicado.
             if score_final[0][0] < 400:
-                st.write(usuario,', este é seu score:')
+                st.markdown(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
-                st.write('''Infelizmente, você não foi aprovado em nossa política de crédito.
+                st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
                             Mas não fique triste! Você terá outras oportunidades.''')
             else:
-                st.write(usuario,', este é seu score:')
+                st.markdown(usuario,', este é seu score:')
                 st.markdown(score_final[0][0])
-                st.write('Valor da mensalidade do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
+                st.markdown('Valor da mensalidade do empréstimo: R$ {}. A primeira só daqui a três meses.'.format(mensalidade))
