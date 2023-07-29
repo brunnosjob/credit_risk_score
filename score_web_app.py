@@ -104,7 +104,9 @@ if idade > 40:
     st.write('''
     Este programa é destinado para um perfil mais jovem.
 
-    Talvez você gostaria de tentar este outro programa:''')
+    Mas não se preocupe! Temos um programa especialmente para você:''')
+    texto_do_link = "Programa Para Todos"
+    st.markdown(f"[{texto_do_link}]({https://fintech-classifier-machine-learning.streamlit.app/})", unsafe_allow_html=True)
 
 # Condicional para pagamento à vista
 if parcela == 1:
