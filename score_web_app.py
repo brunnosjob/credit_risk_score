@@ -137,7 +137,7 @@ else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
                 st.markdown('''Infelizmente, você não foi aprovado em nossa política de crédito.
-                            Mas não fique triste! Você terá outras oportunidades.''')
+                            Mas não fique triste! Você terá outras oportunidades.''') #
             else:
                 st.write(usuario,', este é seu score:')
                 st.markdown(score_final_tratado)
