@@ -1,7 +1,6 @@
 # Importando bibliotecas
 import streamlit as st
 import pickle
-import gzip as gz
 import joblib
 
 # Importando algoritmo
