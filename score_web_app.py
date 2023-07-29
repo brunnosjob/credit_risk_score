@@ -99,10 +99,10 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 # Predição
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 # Tratamento
-if score_final == 1000:
+if score_final[0][0] == 1000:
     score_final_tratado = 999
 else:
-    score_final_tratado = score_final
+    score_final_tratado = score_final[0][0]
 
 # Regras
 if idade > 45:
