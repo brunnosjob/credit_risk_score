@@ -100,7 +100,11 @@ X_final = [[percentual_comprometimento, renda, risco_credito, condicao_moradia, 
 score_final = modelo_RFC.predict_proba(X_final) * 1000
 
 # Regras
-#if 
+if idade > 40:
+    st.write('''
+    Este programa é destinado para um perfil mais jovem.
+
+    Talvez você gostaria de tentar este outro programa:''')
 
 # Condicional para pagamento à vista
 if parcela == 1:
