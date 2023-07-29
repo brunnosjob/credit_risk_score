@@ -3,12 +3,28 @@ import streamlit as st
 import pickle
 import joblib
 import gzip
+from PIL import Image
 
 # Importando algoritmo
 from sklearn.ensemble import RandomForestClassifier
 
 # Orientação inicial
+#Indicando do que se trata a web app
+foto = Image.open('bruno.carloto (2).png')
+st.sidebar.image(foto, use_column_width=True)
+st.sidebar.subheader('Bruno Rodrigues Carloto')
+st.sidebar.markdown('Analista de Inteligência de Mercado de Crédito')
+st.sidebar.markdown('#### Projeto de portfólio de Ciência de Dados')
 st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
+st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
+
+st.sidebar.markdown("Redes Sociais :")
+st.sidebar.markdown("- [Linkedin](https://www.linkedin.com/in/bruno-rodrigues-carloto)")
+st.sidebar.markdown("- [Medium](https://medium.com/@brc-deep-analytics)")
+st.sidebar.markdown("- [Mercadados](https://brunnocarlotosjob.wixsite.com/mercadados)")
+
+
+
 st.header('Seja bem-vindo ao Good Bank')
 st.subheader('Programa Para Jovens')
 st.markdown(' ')
