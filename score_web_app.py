@@ -131,6 +131,10 @@ score_final = modelo_RFC.predict_proba(X_final) * 1000
 # Tratamento
 if(score_final[0][0] == 1000.0).any():
     score_final_tratado = int(999.0)
+elif (score_final[0][0] == 0.0).any():
+    score_final_tratado = int(2.0)
+elif (score_final[0][0] == 1.0).any():
+    score_final_tratado = int(2.0)
 else:
     score_final_tratado = str(int(score_final[0][0]))
 
