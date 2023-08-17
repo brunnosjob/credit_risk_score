@@ -2,7 +2,7 @@
 import streamlit as st
 import pickle
 import joblib
-import gzip
+# import gzip
 from PIL import Image
 
 # Importando algoritmo
