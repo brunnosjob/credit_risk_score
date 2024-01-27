@@ -7,6 +7,7 @@ from PIL import Image
 
 # Importando algoritmo
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 
 # Orientação inicial
 st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
@@ -51,7 +52,7 @@ parcela = st.radio('Em quantas vezes você quer pagar o empréstimo?', (1, 2, 3,
 mensalidade = (round(((financiamento/parcela)) * juro,2)) # Cálculo do juros sobre a mensalidade
 
 # Operação do modelo
-modelo_RFC = joblib.load('modelo_RFC_v4.joblib')
+modelo_RFC = joblib.load('modelo_RFC_v5.joblib') #Logistict Regression / Erro em RandomForestClassifier 
     
 def classificacao_risco(renda, percentual_comprometimento):
     
