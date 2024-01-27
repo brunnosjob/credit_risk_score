@@ -51,7 +51,7 @@ parcela = st.radio('Em quantas vezes você quer pagar o empréstimo?', (1, 2, 3,
 mensalidade = (round(((financiamento/parcela)) * juro,2)) # Cálculo do juros sobre a mensalidade
 
 # Operação do modelo
-modelo_RFC = joblib.load('modelo_RFC_v2.joblib')
+modelo_RFC = joblib.load('modelo_RFC_v4.joblib')
     
 def classificacao_risco(renda, percentual_comprometimento):
     
