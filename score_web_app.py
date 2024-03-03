@@ -18,7 +18,7 @@ st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de dados')
 st.sidebar.markdown('#### Projeto de modelagem')
-st.sidebar.markdown("Em breve novas informações sobre o projeto")
+st.sidebar.markdown("- [Artigo em Medium](https://brc-deep-analytics.medium.com/machine-learning-para-credit-scoring-5a4d1b7188c7)") 
 st.sidebar.markdown('Feito por : Bruno Rodrigues Carloto')
 
 st.sidebar.markdown("Redes Sociais :")
