@@ -13,7 +13,7 @@ from sklearn.linear_model import LogisticRegression
 st.markdown('*_Observação: para mais informações, navegue pelas páginas_*')
 
 #Indicando do que se trata a web app
-foto = Image.open('bruno.carloto (2).png')
+foto = Image.open('perfil_linkedin-removebg-preview (1)-fotor-bg-remover-2024030223153.png')
 st.sidebar.image(foto, use_column_width=True)
 st.sidebar.subheader('Bruno Rodrigues Carloto')
 st.sidebar.markdown('Analista de dados')
