@@ -6,4 +6,4 @@ matplotlib == 3.3.0
 pillow == 8.3.0
 joblib == 1.2.1
 pip == 23.0.3
-streamlit >= 1.1.0
+streamlit == 1.0.0
